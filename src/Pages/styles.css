@@ -9,6 +9,18 @@
   max-height: 100vh;
 }
 
+p {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 80px;
+  left: 8px;
+  z-index: 999;
+  padding: 4px 8px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
 .grafico {
   height: 38%;
   width: 38%;
@@ -43,16 +55,4 @@
     right: 0;
     bottom: 0;
   }
-}
-
-p {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  top: 80px;
-  left: 8px;
-  z-index: 999;
-  padding: 4px 8px;
-  background-color: #fff;
-  border-radius: 8px;
 }

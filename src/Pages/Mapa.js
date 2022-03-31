@@ -4,7 +4,7 @@ import "leaflet/dist/leaflet.css";
 import { MdMyLocation } from "react-icons/md";
 
 import "./styles.css";
-import Coordenasdas from "../components/Coordenasdas";
+import Coordinates from "../components/Coordinates";
 
 const center = [-15.974, -41.635];
 
@@ -20,7 +20,7 @@ export default function Mapa() {
       <p>
         <MdMyLocation /> {center}
       </p>
-      <Coordenasdas />
+      <Coordinates />
     </MapContainer>
   );
 }

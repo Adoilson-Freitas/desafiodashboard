@@ -1,4 +1,4 @@
-import { Marker, Popup } from "react-leaflet";
+import { Marker, Tooltip } from "react-leaflet";
 import L from "leaflet";
 import iconShadow from "leaflet/dist/images/marker-shadow.png";
 
@@ -16,7 +16,8 @@ var orangeIcon = new L.Icon({
 });
 
 L.Marker.prototype.options.icon = orangeIcon;
-export default function Coordenasdas() {
+
+export default function Coordinates() {
   const [coords, setCoords] = useState();
 
   useEffect(() => {
@@ -42,11 +43,9 @@ export default function Coordenasdas() {
             cord.geometry.coordinates[0],
           ]}
         >
-          <Popup>
-            <div>
-              <h4>{cord.properties.country}</h4>
-            </div>
-          </Popup>
+          <Tooltip>
+            <h3>{cord.properties.country}</h3>
+          </Tooltip>
         </Marker>
       ))}
     </>
