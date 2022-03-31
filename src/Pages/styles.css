@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.leaflet-container {
+  max-width: 100vw;
+  max-height: 100vh;
+}
+
+.grafico {
+  height: 38%;
+  width: 38%;
+  position: absolute;
+  z-index: 999;
+  right: 4px;
+  bottom: 10px;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 850px) {
+  .grafico {
+    width: 50%;
+    height: 28%;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .grafico {
+    width: 100%;
+    height: 40%;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .grafico {
+    width: 100%;
+    height: 30%;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+p {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 80px;
+  left: 8px;
+  z-index: 999;
+  padding: 4px 8px;
+  background-color: #fff;
+  border-radius: 8px;
+}
