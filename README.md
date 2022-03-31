@@ -6,7 +6,7 @@
 
 ### 📝 Funcionalidades
 
-- [x] Mostrar itens da api no mapa.
+- [x] Mostrar mapa e itens da api no mapa.
 - [x] Mostrar dados da api no gráfico.
 
 
